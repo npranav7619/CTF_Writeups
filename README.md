@@ -12,4 +12,4 @@
 
 [OvertheWire Natas](https://npranav7619.github.io/CTF_Writeups/OvertheWire/Natas/)
 
-[PicoCTF](https://npranav7619.github.io/CTF_Writeups/OvertheWire/PicoCTF/)
+[PicoCTF](https://npranav7619.github.io/CTF_Writeups/PicoCTF/)
