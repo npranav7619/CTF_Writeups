@@ -7,14 +7,6 @@
 
 
 ### CTF_Writeups
-
-
-<Tabs
-  defaultActiveKey="PicoCTF"
-  transition={false}
-  id="noanim-tab-example"
-  className="mb-3"
->
   <Tab eventKey="PicoCTF" title="PicoCTF">
     <Sonnet />
   </Tab>
