@@ -7,10 +7,4 @@
 
 
 ### CTF_Writeups
-  <Tab eventKey="PicoCTF" title="PicoCTF">
-    <Sonnet />
-  </Tab>
-  <Tab eventKey="OvertheWire_Bandit" title="OvertheWire_Bandit">
-    <Sonnet />
-  </Tab>
-</Tabs>
+
