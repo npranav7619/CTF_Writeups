@@ -24,11 +24,22 @@ By simply inspecting the webpage and js scripts
 
 ### Scavenger Hunt
 Part 1 is Inspectelement
+
+
 Part 2 is Mycss.css
+
+
 Part 3 is Myjs.js 
+
+
 Part 4 is Robots.txt
+
+
 Part 5 is .htaccess
+
+
 Part 6 is .dsstore
+
 ```picoCTF{th4ts_4_l0t_0f_pl4c3s_2_lO0k_35844447}```
 
 
