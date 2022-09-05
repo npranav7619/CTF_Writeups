@@ -7,5 +7,5 @@
 [About Me](https://npranav7619.github.io/Aboutme)
 
 # TryHackMe
-## Burp Suite
+## Web Hacking Fundamentals
 
