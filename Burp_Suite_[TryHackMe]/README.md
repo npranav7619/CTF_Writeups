@@ -25,4 +25,22 @@ Target
 
 Scanner
 
-###
+### 5 Encoding or decoding data can be particularly useful when examining URL parameters or protections on a form, which tool allows us to do just that?
+
+Decoder
+
+### 6 Which tool allows us to redirect our web traffic into Burp for further examination?
+
+Proxy
+
+### 7 Simple in concept but powerful in execution, which tool allows us to reissue requests?
+
+Repeater
+
+### 8 With four modes, which tool in Burp can we use for a variety of purposes such as field fuzzing?
+
+Intruder
+
+### 9 Last but certainly not least, which tool allows us to modify Burp Suite via the addition of extensions?
+
+Extender
