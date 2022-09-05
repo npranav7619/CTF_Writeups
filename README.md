@@ -14,3 +14,11 @@
 [PicoCTF](https://npranav7619.github.io/CTF_Writeups/PicoCTF/)
 
 [CSACTF](https://npranav7619.github.io/CTF_Writeups/CSACTF/)
+
+[Web Hacking Fundamentals [TryHackMe]](https://npranav7619.github.io/CTF_Writeups/Web_Hacking_Fundamentals_[TryHackMe]/)
+
+[Introduction to Web Hacking [TryHackMe]](https://npranav7619.github.io/CTF_Writeups/Introduction_to_Web_Hacking_[TryHackMe]/)
+
+[How the Web Works [TryHackMe]](https://npranav7619.github.io/CTF_Writeups/How_the_Web_Works_[TryHackMe]/)
+
+[Burp Suite [TryHackMe]](https://npranav7619.github.io/CTF_Writeups/Burp_Suite_[TryHackMe]/)
