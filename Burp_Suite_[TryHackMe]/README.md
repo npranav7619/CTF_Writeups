@@ -102,3 +102,24 @@ SQLITE_ERROR
 ### 8 What field do we have to modify in order to submit a zero-star review?
 
 rating
+
+## Help! There’s an Intruder!
+### 1 Which attack type allows us to select multiple payload sets (one per position) and iterate through them simultaneously?
+
+Pitchfork
+
+### 2 How about the attack type which allows us to use one payload set in every single position we’ve selected simultaneously?
+
+Battering Ram
+
+### 3 Which attack type allows us to select multiple payload sets (one per position) and iterate through all possible combinations?
+
+Cluster Bomb
+
+### 4 Perhaps the most commonly used, which attack type allows us to cycle through our payload set, putting the next available payload in each position in turn?
+
+Sniper
+
+### 12 Finally, click ‘Start attack’. What is the first payload that returns a 200 status code, showing that we have successfully bypassed authentication?
+
+a' OR 1=1 —
