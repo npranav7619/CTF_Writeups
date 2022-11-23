@@ -22,3 +22,5 @@
 [How the Web Works [TryHackMe]](https://npranav7619.github.io/CTF_Writeups/How_the_Web_Works_[TryHackMe]/)
 
 [Burp Suite [TryHackMe]](https://npranav7619.github.io/CTF_Writeups/Burp_Suite_[TryHackMe]/)
+
+[Tr0ll[VulnHub]](https://npranav7619.github.io/CTF_Writeups/Troll_[Vulnhub]/)
