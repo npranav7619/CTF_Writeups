@@ -23,4 +23,4 @@
 
 [Burp Suite [TryHackMe]](https://npranav7619.github.io/CTF_Writeups/Burp_Suite_[TryHackMe]/)
 
-[Tr0ll[VulnHub]](https://npranav7619.github.io/CTF_Writeups/Troll_[Vulnhub]/)
+[Tr0ll[VulnHub]](https://npranav7619.github.io/CTF_Writeups/Tr0ll_[Vulnhub]/)
