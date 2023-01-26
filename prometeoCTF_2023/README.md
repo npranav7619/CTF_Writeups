@@ -8,7 +8,7 @@
 
 # PrometeoCTF 23
 
-##(I do not remember the names of some of the challenges ,hence i've added my own names 😅)
+## (I do not remember the names of some of the challenges ,hence I've added my own names 😅)
 
 ### Challenge #1 - Based
 
@@ -28,11 +28,12 @@ prometeoCTF{m0rs3_cod3_1s_fun}
 ### Challenge #3 - Basic but cool 
 
 This challenge was pretty interesting 
-""
-Are you smart enough to decipher this? Think thrice before you do it
 
-L2IvraWapzWDE1A7Z19GAUOaZTIsATuaqI95raZ0ZU0=
-""
+This was the P.S
+
+          Are you smart enough to decipher this? Think thrice before you do it
+
+          L2IvraWapzWDE1A7Z19GAUOaZTIsATuaqI95raZ0ZU0=
 
 Gave me the idea of it being base64
 tried to convert it into base64 but it resulted in a junk val 
@@ -68,12 +69,12 @@ tried converting it with a simple .py script but no luck
 
 Finally used cyberchef to decrypt using the following receipe
 
- (N-ZA-Mn-za-m0-9+/=)
+   (N-ZA-Mn-za-m0-9+/=)
 
 PrometeoCTF{3_F4ct0r_4uth_lmf40}
 
 
 
-Overall this CTF was fun...We got to 17th position 
+Overall this CTF was fun... We got to 17th position 
 
 
