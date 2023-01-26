@@ -24,3 +24,5 @@
 [Burp Suite [TryHackMe]](https://npranav7619.github.io/CTF_Writeups/Burp_Suite_[TryHackMe]/)
 
 [Tr0ll[VulnHub]](https://npranav7619.github.io/CTF_Writeups/Tr0ll_[Vulnhub]/)
+
+[prometeoCTF](https://npranav7619.github.io/CTF_Writeups/prometeoCTF_2023)
