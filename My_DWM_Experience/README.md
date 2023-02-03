@@ -15,7 +15,6 @@ Window Manager's are similar to desktop environments but they are way lighter an
 Well..more complex to use...but once mastered..It'll be highly productive because everything can be done and managed with just your keyboard and nothing else no GUI..no mouse required.
 So usually in dwm you are given a blank screen with a few keybinds to start a shell and few keybinds to move through the windows for managing the applications 
 
-So the first thing I wanted to do was to change the default terminal from sh to "alacritty" cuz its way better.
-that is done by opening the config.h file in your /dwm directory and changing the terminal option and also changed the text size "14".
-
+So the first thing I wanted to do was to change the default terminal from sh to "alacritty" cuz its way better and I've been using that for a while..so the way you customize your dwm is fairly simple .DWM is built with a .c file .Any changes you want to make is done by editing the .c file and then recompiling it .
+That is done by opening the config.h file in your /dwm directory and changing the terminal option and also changed the text size "14".
 
