@@ -9,7 +9,7 @@
 	Date:2-2-22
 	Time:10:23
 
-	This is my first time writing a blog so i'll try to make it sound intresting as much as 		 possible .But if you're into geeky stuff..I'm Sorry :(
+	This is my first time writing a blog so i'll try to make it sound intresting as much as 		 possible .But if you're into nerdy stuff..I'm Sorry :(
 	A week ago i decided to try DWM for the first time. DWM for those who dont know is suckless's "Dynamic Window Manager"
 	Window Manager's are similar to desktop environments but they are way lighter and are in general more complex to use .
 	Well..more complex to use...but once mastered..It'll be highly productive because everything can be done and managed with just your keyboard and nothing else no GUI..no mouse required.
@@ -24,8 +24,12 @@
 	Next thing I wanted to do was fix my dwm-status-bar 
 	I wanted the Basic UI to be on the top corner with TEMP,BATTERY-INFO AND DATE-TIME so i found a shell script online that prints these info.
 	so once I run the script it prints the data on the top right corner 
-	But I wanted this script to run once i log into dwm so i tried multiple ways to do that but the best method was to use an autostart patch 
+	But I wanted this script to run once i log into dwm so i tried multiple ways to do that 
+	First I tried to do that with cron because that seemed like the simplest method  but since i use a display manager it failed to work and then i 	tried to do the same thing with systemd ...created a .service and tried to automate..same error on checking the journal 
+	finally decided to use the autostart patch 
 	Patching in dwm is adding more functionality to the original dwm code.
 	It's done using a simple command called 'patch'  (read man patch for more info)
 	I was able to install the autostart patch and then add this script to the .dwm/autostart.sh file to it.
 	Right now..I really enjoy using this window manager since I have the ability to customize everything I want .I'll update this page with my thoughts on this wm as I use more of this and the problems I face and how I managed to fix them.
+
+	
