@@ -61,6 +61,10 @@
 	static const char *volupcmd[]={"pactl", "set-sink-volume", "0", "+5%", NULL};
 	static const char *voldowncmd[]={"pactl", "set-sink-volume", "0", "-5%", NULL};
 	
+	{ MODKEY,                       XK_F6, spawn, {.v = voldowncmd } },
+	{ MODKEY,                       XK_F5,  spawn, {.v = mutecmd } },
+	{ MODKEY,                       XK_F7, spawn, {.v = volupcmd   } },
+	
 	for this you need to have PulseAudio installed
 	in order to understand what this command does
 	you can visit the man page of "pactl"
