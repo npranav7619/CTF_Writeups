@@ -83,6 +83,6 @@
 		'''feh --bg-fill `~/Pictures/<PictureName>.png'''
 	and adding it to autostart.sh in .dwm/ will automatically set the wallaper when dwm is started
 	
-	And I also encountered this problem where 'dmenu' wont start and for it to work we need to set the locale 
+	And I also had this problem where 'dmenu' wont start and for it to work we need to set the locale 
 	and thats something you do manually in arch ( using the localgen and localectl )
 	
