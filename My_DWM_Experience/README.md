@@ -70,5 +70,19 @@
 	you can visit the man page of "pactl"
 	
 	
-
+	Date:24-2-23
+	Time:12:22
+	
+	Installed a modular status bar for DWM using 
+		'''https://github.com/thytom/dwmbar'''
+	installing 
+		'''https://aur.archlinux.org/packages/ttf-nerd-fonts-hack-complete-git''' 
+	is recommended for icons to show up on the bar
+	to modify the modules in the bar  we can edit the 'config' file in /usr/share/dwmbar/ directory
+	and I know I didn't mention this before but to set a wallpaper we can use the program called 'feh'
+		'''feh --bg-fill `~/Pictures/<PictureName>.png'''
+	and adding it to autostart.sh in .dwm/ will automatically set the wallaper when dwm is started
+	
+	And I also encountered this problem where 'dmenu' wont start and for it to work we need to set the locale 
+	and thats something you do manually in arch ( using the localgen and localectl )
 	
