@@ -86,3 +86,33 @@
 	And I also had this problem where 'dmenu' wont start and for it to work we need to set the locale 
 	and thats something you do manually in arch ( using the localgen and localectl )
 	
+	
+	Date:06-3-23
+	Time:12:23
+	
+	This is a small change but it kinda still bugs me . Everytime I open a terminal I notice that the color 
+	of the prompt and the input is same.This makes it hard for me to notice the different output I get
+	this can be fixed by editing the .bashrc file in your /home directory . We can edit this by opening .bashrc and
+	appending the following line to it
+	
+		export PS1="\e[0;33m[\u@\h \W]\$ \e[m"
+	
+	the 0;33 here refers to different colors.
+	
+		Color	Code
+		Black	0;30
+		Blue	0;34
+		Green	0;32
+		Cyan	0;36
+		Red	0;31
+		Purple	0;35
+		Brown	0;33
+		Blue	0;34
+		Green	0;32
+		Cyan	0;36
+		Red	0;31
+		Purple	0;35
+		Brown	0;33
+	
+	Appending this line fixes my issue and makes the prompt color different from the input one . :D 
+	
