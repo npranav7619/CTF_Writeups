@@ -121,4 +121,5 @@
 	
 	Installed 'agave Nerd-Font' and applied it to my dwm by editing the line
 		static const char *fonts[] =  {"agave Nerd Font mono:size=14"};
-	
+	make sure to also edit alacritty's config file (.config/alacritty/alacritty.yml)
+	and changing the line "family:monospace" to "family:agave Nerd Font"
