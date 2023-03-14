@@ -10,7 +10,7 @@
 	Time:10:23
 
 	This is my first time writing a blog so i'll try to make it sound interesting 
-	as much as possible .But if you're into nerdy stuff..I'm Sorry :(
+	as much as possible .But if you're not into nerdy stuff..I'm Sorry :(
 	A week ago i decided to try DWM for the first time. DWM for those 
 	who dont know is suckless's "Dynamic Window Manager"
 	Window Manager's are similar to desktop environments but they are way 
