@@ -116,3 +116,9 @@
 	
 	Appending this line fixes my issue and makes the prompt color different from the input one . :D 
 	
+	Date:14-03-23
+	Time:17:32
+	
+	Installed 'agave Nerd-Font' and applied it to my dwm by editing the line
+		static const char *fonts[] =  {"agave Nerd Font mono:size=14"};
+	
