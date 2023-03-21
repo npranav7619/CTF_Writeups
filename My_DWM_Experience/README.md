@@ -90,10 +90,10 @@
 	Date:06-3-23
 	Time:12:23
 	
-	This is a small change but it kinda still bugs me . Everytime I open a terminal I notice that the color 
-	of the prompt and the input is same.This makes it hard for me to notice the different output I get
-	this can be fixed by editing the .bashrc file in your /home directory . We can edit this by opening .bashrc and
-	appending the following line to it
+	This is a small change but it kinda still bugs me . Everytime I open a terminal I notice that the 
+	color of the prompt and the input is same.This makes it hard for me to notice the different 
+	output I get this can be fixed by editing the .bashrc file in your /home directory . We can edit 
+	this by opening .bashrc and appending the following line to it
 	
 		export PS1="\e[0;33m[\u@\h \W]\$ \e[m"
 	
