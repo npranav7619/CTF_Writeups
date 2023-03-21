@@ -125,3 +125,19 @@
 		static const char dmenufont[]            = "agave Nerd Font Mono:size=14";
 	make sure to also edit alacritty's config file (.config/alacritty/alacritty.yml)
 	and changing the line "family:monospace" to "family:agave Nerd Font"
+	
+	Date:21-03-23
+	Time:23:28
+	
+	The best part about using DWM is keybinds so I wanted to create something of my own
+	I had bit of trouble connecting to mobile-hotspot everytime so made this quick command using nmcli
+	which is 
+	
+		nmcli device wifi connect $SSID password $pwd
+	and assign a keybind using the program 'sxhkd' and made things even better with ascii-art 
+	
+
+		༼ つ ▀_▀ ༽つ
+		
+	So everytime my computer connects to my network it prints an asciit art and plays a beep sound XD! 
+	
