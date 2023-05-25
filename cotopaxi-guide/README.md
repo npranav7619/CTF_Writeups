@@ -6,10 +6,13 @@
 [CTF_Writeups](https://npranav7619.github.io/CTF_Writeups)
 [About Me](https://npranav7619.github.io/Aboutme)
 
+
+## Cotopaxi Guide
+### A guide on how IoT protocols work and how to use cotopaxi 
+    
     Date:25-5-23
     Time:09:07
-    Cotopaxi Guide
-    A guide on how IoT protocols work and how to use cotopaxi 
+    
     New Protocol like CoAP,DTLS,MQTT were introduced and old ones like UPnP ,SSDP were removed
     
     CoAP :
