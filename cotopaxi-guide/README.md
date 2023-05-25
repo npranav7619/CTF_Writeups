@@ -19,6 +19,8 @@
     CoAP is designed to enable simple, constrained devices to join the IoT even through constrained 
     networks with low bandwidth and low availability.
     
+    #INSERT COAP PICTURE HERE    
+
     DTLS : 
     
     DTLS stands for Datagram Transport Layer Security. It’s a session layer communications 
@@ -71,13 +73,27 @@
     Identifies active service endpoints 
     Better than standard tools because nmap and wireshark do not recognize IoT traffic on non standard ports
     
-    Security Scanner : Verifing security settings (ciphersuites and certificates)
-    Software fingerprinting : The software used by the remote network server 
-    Resource Listing (dirbusting) : Discovering resources identified by the given URLs
-    Device Identification : Passive analysis of traffic and device classification using Machine Learning
+    Security Scanner : 
+    Verifing security settings (ciphersuites and certificates)
+
+    Software fingerprinting : 
+    The software used by the remote network server 
+    Equvalent to nmap -sV
+    Uses machine learning classfier 
+
+    Resource Listing (dirbusting) : 
+    Discovering resources identified by the given URLs
+    Equivalent to Dirbuster for CoAP/mDNS/SSDP
+    Has a list of URIs or services 
+
+    Device Identification : 
+    Passive analysis of traffic and device classification using Machine Learning
+    Identification of IoT devices using captured traffic (PCAP format)
+        
 
     Pre-Exploitatio Phase : 
     
     Amplification sniffing : detecting network traffic amplificaiton
     Protocol Fuzzing : Fuzzing impletementation of protocols
     Vulnerability testing : Identifying known vulnerabilities 
+    
