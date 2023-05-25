@@ -29,4 +29,6 @@
 
 [My_DWM_Experience](https://npranav7619.github.io/CTF_Writeups/My_DWM_Experience/)
 
+[cotopaxi-guide](https://npranav7619.github.io/CTF_Writeups/cotopaxi-guide/)
+
 [crackme first](https://npranav7619.github.io/CTF_Writeups/[crackeme]first/)
