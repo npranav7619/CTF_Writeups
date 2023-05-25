@@ -75,7 +75,8 @@
 
     Checking availability of network services
     Identifies active service endpoints 
-    Better than standard tools because nmap and wireshark do not recognize IoT traffic on non standard ports
+    Better than standard tools because nmap and wireshark do not recognize
+    IoT traffic on non standard ports
     
     Security Scanner : 
     Verifing security settings (ciphersuites and certificates)
