@@ -57,7 +57,7 @@
 
     These protocols were not tested by security testing tools.
 
-    ![image](https://github.com/npranav7619/CTF_Writeups/assets/52345192/00036558-0b59-4b84-8bf8-a62758947803)
+   ![image](https://github.com/npranav7619/CTF_Writeups/blob/main/assets/52345192/2019state.png)
 
     This is where cotopaxi comes into play.
     This Tool has mutiple purposes like 
