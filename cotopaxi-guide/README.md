@@ -4,7 +4,7 @@
 
 [Home](https://npranav7619.github.io/)
 [CTF_Writeups](https://npranav7619.github.io/CTF_Writeups)
-[About Me](https://npranav7619.github.io/Aboutme)
+[About Me](https://npranav7619.github.io/aboutme)
 
 
 ## Cotopaxi Guide
