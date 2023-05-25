@@ -21,8 +21,8 @@
     
     DTLS : 
     
-    DTLS stands for Datagram Transport Layer Security. It’s a session layer communications protocol designed 
-    to protect data privacy. 
+    DTLS stands for Datagram Transport Layer Security. It’s a session layer communications 
+    protocol designed to protect data privacy. 
     It allows datagram-based applications to communicate while preventing tampering, eavesdropping, and 
     message forgery.
     Although DTLS is based on TLS, they are two different things. Whereas DTLS is built on UDP, TLS uses 
@@ -38,9 +38,20 @@
     and can communicate IoT data efficiently. 
     MQTT supports messaging between devices to the cloud and the cloud to the device.
     
+    MQTT-SN is MQTT Sensor Network protocol
+    Its a UDP based clone of MQTT 
+    Minor changes in packet formats 
+    
+    QUIC : 
+    
+    Quick UDP Internet Connections
+    Created by google and widely used by google apps and its UDP based
+    #INSERT QUIC IMAGE HERE
+
+
     These protocols were not tested by security testing tools.
 
-    #INSERT IMAGE HERE 
+    #INSERT PROTOCOLS_COTOPAXI IMAGE HERE 
 
     This is where cotopaxi comes into play.
     This Tool has mutiple purposes like 
@@ -54,7 +65,12 @@
       
     Reconnaissance Phase : 
 
-    Service Ping : Checking availability of network services
+    Service Ping : 
+
+    Checking availability of network services
+    Identifies active service endpoints 
+    Better than standard tools because nmap and wireshark do not recognize IoT traffic on non standard ports
+    
     Security Scanner : Verifing security settings (ciphersuites and certificates)
     Software fingerprinting : The software used by the remote network server 
     Resource Listing (dirbusting) : Discovering resources identified by the given URLs
