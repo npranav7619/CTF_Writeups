@@ -96,7 +96,22 @@
 
     Pre-Exploitatio Phase : 
     
-    Amplification sniffing : detecting network traffic amplificaiton
-    Protocol Fuzzing : Fuzzing impletementation of protocols
-    Vulnerability testing : Identifying known vulnerabilities 
+    Amplification sniffing : 
+    Detecting network traffic amplificaiton
+    Calculates amplification factor (sizeout / sizein -1)
+    should be placed on router or use network tap to see all traffic to/from target 
+
+    Protocol Fuzzing : 
+    Fuzzing impletementation of protocols
+    checks service ping before and after sending payload
+    in verbose mode displays payload and response packet.
+    
+    Vulnerability testing : 
+    Identifying known vulnerabilities 
+    5 classes
+    information disclosure : unauthorized access to internal information
+    crash (DoS) : leads to crash of server 
+    traffic amplification : responses larger than request
+    memory leak : server wastes memory after processing the payload   so it requires manual confirmation
+    remote code execution : currently only deteced as crash
     
