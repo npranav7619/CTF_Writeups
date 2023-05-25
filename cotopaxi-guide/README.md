@@ -14,7 +14,7 @@ Date:25-5-23
 
 Time:09:07
 
-New Protocol like CoAP,DTLS,MQTT were introduced and old ones like UPnP ,SSDP were removed
+New protocols like CoAP, DTLS, and MQTT were introduced and old ones like UPnP and SSDP were removed.
 
 ### CoAP :
 
@@ -53,7 +53,7 @@ Minor changes in packet formats
 ### QUIC : 
 
 Quick UDP Internet Connections
-Created by google and widely used by google apps and its UDP based
+Created by Google and widely used by Google apps and its UDP based
 
 
 
@@ -62,7 +62,7 @@ These protocols were not tested by security testing tools.
 ![image](https://github.com/npranav7619/CTF_Writeups/blob/main/assets/52345192/2019state.png)
 
 This is where cotopaxi comes into play.
-This Tool has mutiple purposes like 
+This Tool has multiple purposes like 
   Find active endpoints
   Identify network traffic
   fuzz components or interfaces
@@ -75,18 +75,18 @@ The Toolkits in cotopaxi
 
 ### Service Ping : 
 
-Checking availability of network services
+Checking the availability of network services
 Identifies active service endpoints 
 Better than standard tools because nmap and wireshark do not recognize
-IoT traffic on non standard ports
+IoT traffic on nonstandard ports
 
 ### Security Scanner : 
-Verifing security settings (ciphersuites and certificates)
+Verifying security settings (cipher suites and certificates)
 
 ### Software fingerprinting : 
 The software used by the remote network server 
 Equvalent to nmap -sV
-Uses machine learning classfier 
+Uses machine learning classifier 
 
 ### Resource Listing (dirbusting) : 
 Discovering resources identified by the given URLs
@@ -101,23 +101,23 @@ Identification of IoT devices using captured traffic (PCAP format)
 ## Pre-Exploitatio Phase : 
 
 ### Amplification sniffing : 
-Detecting network traffic amplificaiton
-Calculates amplification factor (sizeout / sizein -1)
-should be placed on router or use network tap to see all traffic to/from target 
+Detecting network traffic amplification
+Calculates amplification factor (size out / size in -1)
+should be placed on the router or use network tap to see all traffic to/from the target 
 
 ### Protocol Fuzzing : 
-Fuzzing impletementation of protocols
-checks service ping before and after sending payload
+Fuzzing implementation of protocols
+checks service ping before and after sending the payload
 in verbose mode displays payload and response packet.
 
 ### Vulnerability testing : 
 Identifying known vulnerabilities 
 5 classes
-  information disclosure : unauthorized access to internal information
-  crash (DoS) : leads to crash of server 
-  traffic amplification : responses larger than request
-  memory leak : server wastes memory after processing the payload   so it requires manual confirmation
-  remote code execution : currently only deteced as crash
+  information disclosure: unauthorized access to internal information
+  crash (DoS) : leads to crash of the server 
+  traffic amplification: responses larger than the request
+  memory leak: server wastes memory after processing the payload   so it requires manual confirmation
+  remote code execution: currently only detected as crash
 
 
 ### Installation 
@@ -132,7 +132,7 @@ Identifying known vulnerabilities
 
 ### Usage 
 
-  Start the services by opening separately
+  Start the services by opening separately.
 
     python -m cotopaxi.service_ping -h
 
