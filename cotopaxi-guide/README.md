@@ -22,7 +22,8 @@
     CoAP is designed to enable simple, constrained devices to join the IoT even through constrained 
     networks with low bandwidth and low availability.
     
-    #INSERT COAP PICTURE HERE    
+    This is CoAP message format :
+    ![image](https://github.com/npranav7619/CTF_Writeups/assets/52345192/19d08fc8-8b4c-4d62-904b-b02f04b4be56) 
 
     DTLS : 
     
@@ -51,12 +52,12 @@
     
     Quick UDP Internet Connections
     Created by google and widely used by google apps and its UDP based
-    #INSERT QUIC IMAGE HERE
+    
 
 
     These protocols were not tested by security testing tools.
 
-    #INSERT PROTOCOLS_COTOPAXI IMAGE HERE 
+    ![image](https://github.com/npranav7619/CTF_Writeups/assets/52345192/00036558-0b59-4b84-8bf8-a62758947803)
 
     This is where cotopaxi comes into play.
     This Tool has mutiple purposes like 
@@ -132,14 +133,17 @@
       
       python -m cotopaxi.service_ping -h
       
-      #INSERT IMAGE HERE
+      ![image](https://github.com/npranav7619/CTF_Writeups/assets/52345192/b712516f-572a-4a9f-9117-870509883750)
       
       python -m cotopaxi.resource_listing -h
       
-      #INSERT IMAGE HERE
+      ![image](https://github.com/npranav7619/CTF_Writeups/assets/52345192/def8d49f-991f-4236-9956-aa9ce385f477)
       
       python -m cotopaxi.protocol_fuzzer [IP] PORT -P DTLS
         
-      #INSERT IMAGE HERE
+      ![image](https://github.com/npranav7619/CTF_Writeups/assets/52345192/78ac1cea-25b4-47f3-ab25-b49bbe874df7)
       
       python -m cotopaxi.vulnerability_tester [IP] -P DTLS
+
+      ![image](https://github.com/npranav7619/CTF_Writeups/assets/52345192/aea4857a-5b22-45dd-84a1-550d99262b88)
+
