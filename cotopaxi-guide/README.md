@@ -115,3 +115,29 @@
     memory leak : server wastes memory after processing the payload   so it requires manual confirmation
     remote code execution : currently only deteced as crash
     
+
+    Installation 
+        
+        pip install cotopaxi
+        
+        or install from source 
+           
+           git clone https://github.com/Samsung/cotopaxi 
+            
+           cd cotopaxi 
+
+           python setup.py install
+
+      Usage 
+        
+      Start the services by opening separately
+      
+      python -m cotopaxi.service_ping -h
+      
+      #INSERT IMAGE HERE
+      
+      python -m cotopaxi.resource_listing -h
+      
+      python -m cotopaxi.protocol_fuzzer [IP] PORT -P DTLS
+      
+      python -m cotopaxi.vulnerability_tester [IP] -P DTLS
