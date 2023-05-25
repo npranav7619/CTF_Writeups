@@ -21,16 +21,21 @@
     
     DTLS : 
     
-    DTLS stands for Datagram Transport Layer Security. It’s a session layer communications protocol designed to protect data privacy. 
-    It allows datagram-based applications to communicate while preventing tampering, eavesdropping, and message forgery.
-    Although DTLS is based on TLS, they are two different things. Whereas DTLS is built on UDP, TLS uses Transmission Control Protocol (TCP)    
+    DTLS stands for Datagram Transport Layer Security. It’s a session layer communications protocol designed 
+    to protect data privacy. 
+    It allows datagram-based applications to communicate while preventing tampering, eavesdropping, and 
+    message forgery.
+    Although DTLS is based on TLS, they are two different things. Whereas DTLS is built on UDP, TLS uses 
+    Transmission Control Protocol (TCP)    
 
     MQTT : 
 
-    MQTT is a standards-based messaging protocol, or set of rules, used for machine-to-machine communication. Smart sensors,
+    MQTT is a standards-based messaging protocol, or set of rules, used for machine-to-machine
+    communication. Smart sensors,
     wearables, and other Internet of Things (IoT) devices typically have to transmit and receive data
     over a resource-constrained network with limited bandwidth. 
-    These IoT devices use MQTT for data transmission, as it is easy to implement and can communicate IoT data efficiently. 
+    These IoT devices use MQTT for data transmission, as it is easy to implement 
+    and can communicate IoT data efficiently. 
     MQTT supports messaging between devices to the cloud and the cloud to the device.
     
     These protocols were not tested by security testing tools.
