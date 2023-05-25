@@ -23,7 +23,7 @@
     networks with low bandwidth and low availability.
     
     This is CoAP message format :
-   ![image](https://github.com/npranav7619/CTF_Writeups/assets/52345192/coap_msg.png) 
+   ![image](https://github.com/npranav7619/CTF_Writeups/blob/main/assets/52345192/coap_msg.png)
 
     DTLS : 
     
