@@ -116,19 +116,17 @@
     remote code execution : currently only deteced as crash
     
 
-    Installation 
+   ### Installation 
         
         pip install cotopaxi
-        
+    
         or install from source 
-           
-           git clone https://github.com/Samsung/cotopaxi 
-            
-           cd cotopaxi 
 
+           git clone https://github.com/Samsung/cotopaxi 
+           cd cotopaxi
            python setup.py install
 
-      Usage 
+   ### Usage 
         
       Start the services by opening separately
       
@@ -138,6 +136,10 @@
       
       python -m cotopaxi.resource_listing -h
       
+      #INSERT IMAGE HERE
+      
       python -m cotopaxi.protocol_fuzzer [IP] PORT -P DTLS
+        
+      #INSERT IMAGE HERE
       
       python -m cotopaxi.vulnerability_tester [IP] -P DTLS
