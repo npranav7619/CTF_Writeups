@@ -11,11 +11,12 @@
 ### A guide on how IoT protocols work and how to use cotopaxi 
 
 Date:25-5-23
+
 Time:09:07
 
 New Protocol like CoAP,DTLS,MQTT were introduced and old ones like UPnP ,SSDP were removed
 
-CoAP :
+### CoAP :
 
 Constrained Application Protocol (CoAP) is a specialized web transfer protocol for use with 
 constrained nodes and constrained networks in the Internet of Things. 
@@ -26,7 +27,7 @@ This is CoAP message format :
 
 ![image](https://github.com/npranav7619/CTF_Writeups/blob/main/assets/52345192/coap_msg.png)
 
-DTLS : 
+### DTLS : 
 
 DTLS stands for Datagram Transport Layer Security. It’s a session layer communications 
 protocol designed to protect data privacy. 
@@ -35,7 +36,7 @@ message forgery.
 Although DTLS is based on TLS, they are two different things. Whereas DTLS is built on UDP, TLS uses 
 Transmission Control Protocol (TCP)    
 
-MQTT : 
+### MQTT : 
 
 MQTT is a standards-based messaging protocol, or set of rules, used for machine-to-machine
 communication. Smart sensors,
@@ -49,7 +50,7 @@ MQTT-SN is MQTT Sensor Network protocol
 Its a UDP based clone of MQTT 
 Minor changes in packet formats 
 
-QUIC : 
+### QUIC : 
 
 Quick UDP Internet Connections
 Created by google and widely used by google apps and its UDP based
@@ -70,53 +71,53 @@ This Tool has mutiple purposes like
 
 The Toolkits in cotopaxi
 
-Reconnaissance Phase : 
+## Reconnaissance Phase : 
 
-Service Ping : 
+### Service Ping : 
 
 Checking availability of network services
 Identifies active service endpoints 
 Better than standard tools because nmap and wireshark do not recognize
 IoT traffic on non standard ports
 
-Security Scanner : 
+### Security Scanner : 
 Verifing security settings (ciphersuites and certificates)
 
-Software fingerprinting : 
+### Software fingerprinting : 
 The software used by the remote network server 
 Equvalent to nmap -sV
 Uses machine learning classfier 
 
-Resource Listing (dirbusting) : 
+### Resource Listing (dirbusting) : 
 Discovering resources identified by the given URLs
 Equivalent to Dirbuster for CoAP/mDNS/SSDP
 Has a list of URIs or services 
 
-Device Identification : 
+### Device Identification : 
 Passive analysis of traffic and device classification using Machine Learning
 Identification of IoT devices using captured traffic (PCAP format)
 
 
-Pre-Exploitatio Phase : 
+## Pre-Exploitatio Phase : 
 
-Amplification sniffing : 
+### Amplification sniffing : 
 Detecting network traffic amplificaiton
 Calculates amplification factor (sizeout / sizein -1)
 should be placed on router or use network tap to see all traffic to/from target 
 
-Protocol Fuzzing : 
+### Protocol Fuzzing : 
 Fuzzing impletementation of protocols
 checks service ping before and after sending payload
 in verbose mode displays payload and response packet.
 
-Vulnerability testing : 
+### Vulnerability testing : 
 Identifying known vulnerabilities 
 5 classes
-information disclosure : unauthorized access to internal information
-crash (DoS) : leads to crash of server 
-traffic amplification : responses larger than request
-memory leak : server wastes memory after processing the payload   so it requires manual confirmation
-remote code execution : currently only deteced as crash
+  information disclosure : unauthorized access to internal information
+  crash (DoS) : leads to crash of server 
+  traffic amplification : responses larger than request
+  memory leak : server wastes memory after processing the payload   so it requires manual confirmation
+  remote code execution : currently only deteced as crash
 
 
 ### Installation 
