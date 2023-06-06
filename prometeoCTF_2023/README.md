@@ -8,7 +8,7 @@
 
 # PrometeoCTF 23
 
-## (I do not remember the names of some of the challenges ,hence I've added my own names 😅)
+## (I do not remember the names of some of the challenges ,hence I've added my own names ;| )
 
 ### Challenge #1 - Based
 
