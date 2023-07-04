@@ -21,7 +21,7 @@
 	So usually in dwm you are given a blank screen with a few keybinds to 
 	start a shell and few keybinds to move through the windows for managing the applications 
 
-	So the first thing I wanted to do was to change the default terminal from sh to
+	So the first thing I wanted to do was to change the default terminal from st to
 	"alacritty" cuz its way better and I've been using that for a while..so the way
 	you customize your dwm is fairly simple .DWM is built with a .c file.
 	Any changes you want to make is done by editing the .c file and then recompiling it .
