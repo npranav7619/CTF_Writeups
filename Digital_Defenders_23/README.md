@@ -8,7 +8,7 @@
 
 # Digital Defenders CTF 2023 
 
-This was 3 day national level CTF organized by bi0s[https://bi0s.in/], Cisco and CysecK which was really intriguing . I ended up getting **12th** place.
+This was 3 day national level CTF organized by [bi0s](https://bi0s.in/), Cisco and CysecK which was really intriguing . I ended up getting **12th** place.
 So writeup covers some of the interesting challenges from the CTF.
 
 Digital Forenscis was the most intresting cateogry in my opinion.
