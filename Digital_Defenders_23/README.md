@@ -19,5 +19,4 @@ Digital Forenscis was the most intresting cateogry in my opinion.
 
 ## C4pt4inC0ld [Digital-Forensics]
   
-  *White space analysis
-	using `snow` gives us the flag*
+  *I had to do White space analysis, so using `snow` gives us the flag*
