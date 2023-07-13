@@ -20,3 +20,10 @@ Digital Forenscis was the most intresting cateogry in my opinion.
 ## C4pt4inC0ld [Digital-Forensics]
   
   *I had to do White space analysis, so using `snow` gives us the flag*
+
+## brut3nf0rce [Digital-Forensics]
+
+  - Had to bruteforce the zip file with a custom wordlist generated using `crunch` since the chall-desc mentioned the password is less than 3 characters
+	and then got an image
+  - Bruteforce the image again with `rockyou.txt`
+	which got me the flag
