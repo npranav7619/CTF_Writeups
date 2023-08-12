@@ -76,7 +76,7 @@ The character is above 97, but below 125. This implies that it will be lesser th
 The character is below 97, which means that the mod operation does nothing. The character’s preserved!
 Using this information, we can check if each number is below the threshold or not. If it is, we can just add 97 to it to get the original character. If it isn’t, we can just mod it with 97 to get the original character.
 
-`
+```
 from string import ascii_letters, digits
 L = [5, 11, 0, 6, 26, 77, 48, 3, 20, 49, 48, 95, 12, 52, 10, 51, 18, 95, 55, 7, 8, 13, 6, 18, 95, 11, 48, 48, 15,28]
 f = ''
@@ -85,4 +85,4 @@ for i in L:
         f += chr(i)
     else:
         f += chr(i+97)
-`
+```
