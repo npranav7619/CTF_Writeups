@@ -86,3 +86,20 @@ for i in L:
     else:
         f += chr(i+97)
 ```
+## 7h3_Analyst
+
+This was a really cool challenge which can be solved using `voltality` 
+that the key is stored in the envars there is a file where the password has to be bruteforced and the internet history has to checked
+
+we find the clue that the key is biosdfir 
+On performing filescan to get the password encrypted file
+`vol.py -f chall.raw --profile=Win7SP1x86 filescan`
+we extract the zip file using dumpfiles plugin
+On bruteforcing the zip using john the ripper. The password is batman33. The txt inside the zipfile is
+`bhfshqsejovlgkqi`
+now before decoding the text, checking the chromehistory using the plugin chromehistory.
+`vol.py --plugins=plugin/ -f chall.raw --profile=Win7SP1x86 chromehistory`
+The only site visted is pastebin and it asked for a password which will probably be the encrypted code which we got from the zip file.
+On using decode to figure out the encryption(i.e Vigenere Cypher).Decription is done by giving the key biosdfir.Which decrypts the text and gives us the password to the pastebin :
+`azraelknightdfir`
+the pastebin contains the flag
