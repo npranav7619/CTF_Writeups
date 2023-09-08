@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Networking Protocols</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown>
+					<textarea data-template>
+						## Network Protocols
+					  </textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template>
+						### Protocols 
+						- What is a Protocol ?	
+					</textarea>
+				</section>
+				<section>
+					<section> 
+						<img data-src="/home/neouchiha/Downloads/reveal.js-master/images/protocol_define.png"> 
+					</section>
+					<section>
+						A communication protocol is a system of rules that allows two or more entities of a communications system to transmit information
+					</section>
+					<section data-markdown>
+						<textarea> 
+						- DNS
+						- HTTP
+						- TCP
+						- UDP
+						</textarea>
+					</section>
+				</section>
+				<section>
+				<section data-markdown>
+					<textarea data-template>
+						## DNS
+						Domain Name System 
+					</textarea>
+				</section>
+				
+					<section>Why is there a need for this protocol ? </section>
+					<section data-markdown>
+						You're computer cannot understand domain-names
+						
+						It needs to convert
+						
+						```Domain name → IP Address``` 
+					</section>
+					<section>How does DNS work ? </section>
+					<section>
+						<img data-src="/home/neouchiha/Downloads/reveal.js-master/images/protocol_dns.png"> 
+					</section>
+				</section>
+				<section>
+				<section data-markdown>
+					## HTTP
+					Hyper Text Transfer Protocol
+				</section>
+					<section>
+						Where is HTTP used ? 
+					</section>
+					<section data-markdown>
+						Protocol is used to get website data
+						
+						`HTTP Request → HTTP Response`
+
+						You're browser can read this response
+						
+					</section>
+					<section data-markdown=>
+						```
+						curl -I www.google.com
+						```
+						```
+						HTTP/1.1 200 OK
+						Content-Type: text/html; charset=ISO-8859-1
+						Content-Security-Policy-Report-Only: object-src 'none';
+						P3P: CP="This is not a P3P policy!"
+						Date: Thu, 07 Sep 2023 13:40:29 GMT
+						Server: gws
+						X-XSS-Protection: 0
+						X-Frame-Options: SAMEORIGIN
+						Transfer-Encoding: chunked
+						Expires: Thu, 07 Sep 2023 13:40:29 GMT
+						Cache-Control: private
+						```
+					</section>
+			</section>
+				<section>
+					<section data-markdown>
+						## TCP 
+						Transmission Control Protocol 
+					</section>
+					<section data-markdown>
+						- Little more complex thaan HTTP
+						- TCP uses raw binary data unlike HTTP
+						- TCP is a layer below HTTP 
+					</section>
+					<section>
+						<img data-src="/home/neouchiha/Downloads/reveal.js-master/images/tcp_header.jpg">
+					</section>
+					<section>
+						<img data-src="/home/neouchiha/Downloads/reveal.js-master/images/http_tcp.png">
+					</section>
+					<section>
+						<img data-src="/home/neouchiha/Downloads/reveal.js-master/images/threeway_handshake.jpg">
+					</section>
+				</section>
+			</section>
+				<section>
+					<section data-markdown>
+						## UDP
+						User Datagram Protocol
+					</section>
+					<section data-markdown>
+						### Features 
+						- Unreliable and connectionless protocol
+						- No Checksum
+						- UDP packets are 8 bytes which is small compared to something like a TCP Packet which is 20-60 bytes 
+						- Lower Latency
+						- Faster Response Time
+					</section>
+					<section data-markdown>
+						### Uses 
+						- NTP (Network Time Protocol)
+						- Voice and Video Calling 
+						- Gaming
+						- Used in DNS 
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
