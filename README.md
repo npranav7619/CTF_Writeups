@@ -1,5 +1,7 @@
 # Welcome to Neouchiha's Blog
 
+## [This website](https://npranav7619.github.io/posts) Recommended
+
 ### Feel Free to Look at my CTF_Writeups and other Projects :)
 
 [Home](https://npranav7619.github.io/)
