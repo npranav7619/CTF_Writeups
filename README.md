@@ -13,6 +13,8 @@
 
 [PicoCTF](https://npranav7619.github.io/CTF_Writeups/PicoCTF/)
 
+[Digital Defenders 2023](https://github.com/npranav7619/CTF_Writeups/Digital_Defenders_23/)
+
 [CSACTF](https://npranav7619.github.io/CTF_Writeups/CSACTF/)
 
 [Web Hacking Fundamentals [TryHackMe]](https://npranav7619.github.io/CTF_Writeups/Web_Hacking_Fundamentals_[TryHackMe]/)
