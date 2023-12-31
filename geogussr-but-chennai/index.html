@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panorama with Map</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        #panoramaContainer,
+        #mapContainer {
+            width: 45%;
+            height: 100%;
+        }
+        #map {
+            width: 100%;
+            height: auto;
+            cursor: crosshair; /* Change cursor to crosshair for better user experience */
+        }
+        #coordinates {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        #score {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="panoramaContainer"></div>
+<div id="mapContainer">
+    <img id="map" src="chennai_map.png" alt="Map Image">
+</div>
+<button onclick="nextImage()">Next Image</button>
+<div id="coordinates"></div>
+<div id="score"></div>
+
+<script>
+    var panoramaData = [
+        { url: "https://i.imgur.com/kKhBsmM.png", markerX: 448.86669921875, markerY: 130 },
+        { url: "https://i.imgur.com/gwWlJUL.jpg", markerX: 239.86669921875, markerY: 278 },
+        { url: "https://i.imgur.com/hRdwBQf.jpg", markerX: 416.83331298828, markerY: 142 },
+        { url: "https://i.imgur.com/hxK19Fj.jpg", markerX: 321.83331298828, markerY: 343 },
+        { url: "https://i.imgur.com/ElbzN6W.jpg", markerX: 1846.0832519531, markerY: 613 },
+        { url: "https://i.imgur.com/dK1trSa.jpg", markerX: 336.73333740234, markerY: 143 },
+        { url: "https://i.imgur.com/i43hbz6.jpg", markerX: 239.86669921875, markerY: 278 },
+        { url: "https://i.imgur.com/ZtuqXTN.jpg", markerX: 239.86669921875, markerY: 278 },
+        { url: "https://i.imgur.com/ovrRldl.jpg", markerX: 239.86669921875, markerY: 278 },
+        { url: "https://i.imgur.com/rOJOdUg.jpg", markerX: 239.86669921875, markerY: 278 },
+        { url: "https://i.imgur.com/VxsX1pD.png", markerX: 239.86669921875, markerY: 278 },
+        { url: "https://i.imgur.com/kjsnV47.jpg", markerX: 239.86669921875, markerY: 278 },
+        { url: "https://i.imgur.com/NxfioUn.jpg", markerX: 239.86669921875, markerY: 278 },
+        { url: "https://i.imgur.com/CQiFRrE.jpg", markerX: 239.86669921875, markerY: 278 },
+        { url: "https://i.imgur.com/pScGjBu.jpg", markerX: 239.86669921875, markerY: 278 }
+
+        
+    ];
+
+    var currentIndex = 0;
+    var totalScore = 0;
+
+    function updatePanorama() {
+        var panoramaContainer = document.getElementById('panoramaContainer');
+        var currentPanoramaData = panoramaData[currentIndex];
+
+        while (panoramaContainer.firstChild) {
+            panoramaContainer.removeChild(panoramaContainer.firstChild);
+        }
+
+        var iframe = document.createElement('iframe');
+        iframe.id = 'panoramaFrame';
+        iframe.width = '100%';
+        iframe.height = '100%';
+        iframe.allowfullscreen = true;
+        iframe.style.borderStyle = 'none';
+        iframe.src = 'https://cdn.pannellum.org/2.5/pannellum.htm#panorama=' + currentPanoramaData.url;
+
+        panoramaContainer.appendChild(iframe);
+    }
+
+    function showCoordinates(event) {
+        var mapContainer = document.getElementById('map');
+        var rect = mapContainer.getBoundingClientRect();
+
+        var clickX = event.clientX - rect.left;
+        var clickY = event.clientY - rect.top;
+
+        var currentPanoramaData = panoramaData[currentIndex];
+        var markerX = currentPanoramaData.markerX;
+        var markerY = currentPanoramaData.markerY;
+
+        var distance = Math.sqrt(Math.pow(clickX - markerX, 2) + Math.pow(clickY - markerY, 2));
+
+        var coordinatesDiv = document.getElementById('coordinates');
+        coordinatesDiv.textContent = 'Clicked at pixel coordinates: (' + clickX + ', ' + clickY + ')' +
+                                      '\nDistance from marker: ' + distance.toFixed(2) + ' pixels';
+
+        // Calculate score based on distance
+        var score = calculateScore(distance);
+        totalScore += score;  // Accumulate the score
+        updateScore();
+    }
+
+    function calculateScore(distance) {
+        if (distance < 10) {
+            return 50;
+        } else if (distance >= 10 && distance < 50) {
+            return 40;
+        } else if (distance >= 50 && distance < 100) {
+            return 30;
+        } else if (distance >= 100 && distance < 200) {
+            return 20;
+        } else {
+            return 0;
+        }
+    }
+
+    function updateScore() {
+        var scoreDiv = document.getElementById('score');
+        scoreDiv.textContent = 'Total Score: ' + totalScore;
+    }
+
+    document.getElementById('map').addEventListener('click', showCoordinates);
+
+    function nextImage() {
+        currentIndex = (currentIndex + 1) % panoramaData.length;
+        updatePanorama();
+        // Clear coordinates when changing the image
+        document.getElementById('coordinates').textContent = '';
+    }
+
+    updatePanorama();
+</script>
+
+</body>
+</html>
