@@ -49,7 +49,7 @@
 					<section>
 						Linux is just the kernel, adding GNU to it makes it a complete working operating system.	
 						<img
-						class="r-stack" 
+						class="r-fit-text" 
 						src="gnulinux.png"
 						width="450"
 						height="450"
@@ -59,19 +59,37 @@
 					<section data-markdown>
 						What is a Kernel ?
 					
-						- Kernel is like a piece of software that exists within the OS that controls all major function`s
+						- Kernel is like a piece of software that exists within the OS that controls all major functions.
+						- Acts as an interface between hardware and user applications
+						- Contains many built-in drivers and system calls.
 					</section>
 					<section data-markdown>
 						Types of Kernels
 						
 						- Microkernels
-							- smaller in size
-							- Execution speed is low.
-						- Monolithic Kernels
-							- larger than Microkernels
-							- faster obviously
-							
+							- Most services like device drivers, file systems, and network stacks run in user space as separate processes
+							- Since services run in user space, failures in one service do not necessarily crash the entire system, enhancing stability
+							- Easier to extend and maintain since components can be added, removed, or updated independently
+							- Examples : MINIX, GNU Hurd
 					</section>
+					<section data-markdown>
+						- Monolithic Kernels
+							- All OS services, including device drivers, file systems, and network stacks, run in kernel space
+							- Monolithic kernels often have extensive support for a wide range of hardware devices, as device drivers are integrated directly into the kernel
+							- Examples : Linux, BSD
+					</section>
+					<section >
+						Ring Structure
+						<img
+						class="r-fit-text" 
+						src="ring.png"
+						width="800"
+						height="600"
+						/>
+
+					</section>
+					
+				</section>
 					<section data-markdown>
 						
 							>> uname-r
