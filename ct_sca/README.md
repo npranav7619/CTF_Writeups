@@ -211,4 +211,6 @@ else:
 
 and plotting the results we see that the time gets reduced by half as it crosses 50 mark
 
+![fig1](Figure_1.png)
+
 
